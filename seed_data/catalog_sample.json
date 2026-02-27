@@ -1,0 +1,475 @@
+{
+  "categories": [
+    { "name": "Power Solutions" },
+    { "name": "Security Systems" },
+    { "name": "Smart Home" },
+    { "name": "Networking" },
+    { "name": "Accessories" },
+    { "name": "Maintenance Services" }
+  ],
+  "products": [
+    {
+      "name": "3kVA Home Inverter",
+      "description": "Reliable pure sine wave inverter for homes and small offices.",
+      "category_name": "Power Solutions",
+      "base_price": 28999,
+      "discount_price": 26999,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-001/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Capacity", "attribute_value": "3kVA" },
+        { "attribute_name": "Waveform", "attribute_value": "Pure Sine Wave" }
+      ]
+    },
+    {
+      "name": "5kVA Hybrid Inverter",
+      "description": "Hybrid inverter with solar input and intelligent battery management.",
+      "category_name": "Power Solutions",
+      "base_price": 45999,
+      "discount_price": 42999,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-002/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Capacity", "attribute_value": "5kVA" },
+        { "attribute_name": "Solar Input", "attribute_value": "Supported" }
+      ]
+    },
+    {
+      "name": "150Ah Tubular Battery",
+      "description": "Long backup tubular battery for home inverter setups.",
+      "category_name": "Power Solutions",
+      "base_price": 13999,
+      "discount_price": 12999,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-003/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Battery Type", "attribute_value": "Tubular" },
+        { "attribute_name": "Capacity", "attribute_value": "150Ah" }
+      ]
+    },
+    {
+      "name": "220Ah Tall Tubular Battery",
+      "description": "High-capacity battery designed for long-duration backup.",
+      "category_name": "Power Solutions",
+      "base_price": 18999,
+      "discount_price": 17499,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-004/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Battery Type", "attribute_value": "Tall Tubular" },
+        { "attribute_name": "Capacity", "attribute_value": "220Ah" }
+      ]
+    },
+    {
+      "name": "4 Camera CCTV Kit",
+      "description": "4-channel HD CCTV kit with night vision and mobile monitoring.",
+      "category_name": "Security Systems",
+      "base_price": 21999,
+      "discount_price": 19999,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-005/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Camera Count", "attribute_value": "4" },
+        { "attribute_name": "Resolution", "attribute_value": "1080p" }
+      ]
+    },
+    {
+      "name": "8 Camera CCTV Pro Kit",
+      "description": "Professional CCTV kit with 8 channels and remote playback.",
+      "category_name": "Security Systems",
+      "base_price": 36999,
+      "discount_price": 33999,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-006/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Camera Count", "attribute_value": "8" },
+        { "attribute_name": "Storage", "attribute_value": "2TB Included" }
+      ]
+    },
+    {
+      "name": "2MP Dome Camera",
+      "description": "Indoor dome camera with clear image quality and IR support.",
+      "category_name": "Security Systems",
+      "base_price": 2499,
+      "discount_price": 2199,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-007/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Type", "attribute_value": "Dome" },
+        { "attribute_name": "Resolution", "attribute_value": "2MP" }
+      ]
+    },
+    {
+      "name": "2MP Bullet Camera",
+      "description": "Outdoor weatherproof bullet camera with wide-angle lens.",
+      "category_name": "Security Systems",
+      "base_price": 2799,
+      "discount_price": 2499,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-008/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Type", "attribute_value": "Bullet" },
+        { "attribute_name": "Weather Rating", "attribute_value": "IP66" }
+      ]
+    },
+    {
+      "name": "32 inch Smart LED TV",
+      "description": "Compact smart TV ideal for bedrooms and small living rooms.",
+      "category_name": "Smart Home",
+      "base_price": 16999,
+      "discount_price": 15499,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-009/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Display Size", "attribute_value": "32 inch" },
+        { "attribute_name": "Smart Platform", "attribute_value": "Android TV" }
+      ]
+    },
+    {
+      "name": "43 inch 4K Smart LED TV",
+      "description": "Ultra HD smart television with voice remote and app support.",
+      "category_name": "Smart Home",
+      "base_price": 32999,
+      "discount_price": 29999,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-010/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Display Size", "attribute_value": "43 inch" },
+        { "attribute_name": "Resolution", "attribute_value": "4K UHD" }
+      ]
+    },
+    {
+      "name": "10 inch Android Car Player",
+      "description": "Touchscreen infotainment player with Bluetooth and navigation.",
+      "category_name": "Smart Home",
+      "base_price": 11999,
+      "discount_price": 10499,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-011/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Screen Size", "attribute_value": "10 inch" },
+        { "attribute_name": "OS", "attribute_value": "Android" }
+      ]
+    },
+    {
+      "name": "WiFi Smart Switch Kit",
+      "description": "App-controlled switch modules for lights and appliances.",
+      "category_name": "Smart Home",
+      "base_price": 4999,
+      "discount_price": 4499,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-012/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Connectivity", "attribute_value": "WiFi" },
+        { "attribute_name": "Channels", "attribute_value": "4" }
+      ]
+    },
+    {
+      "name": "Dual Band WiFi Router",
+      "description": "High-speed dual-band router for homes and offices.",
+      "category_name": "Networking",
+      "base_price": 3499,
+      "discount_price": 2999,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-013/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Bands", "attribute_value": "2.4GHz + 5GHz" },
+        { "attribute_name": "Speed", "attribute_value": "AC1200" }
+      ]
+    },
+    {
+      "name": "8 Port Gigabit Switch",
+      "description": "Plug-and-play gigabit switch for stable network expansion.",
+      "category_name": "Networking",
+      "base_price": 2299,
+      "discount_price": 1999,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-014/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Ports", "attribute_value": "8" },
+        { "attribute_name": "Speed", "attribute_value": "Gigabit" }
+      ]
+    },
+    {
+      "name": "CAT6 Cable 100m Box",
+      "description": "Premium CAT6 cable roll suitable for structured cabling.",
+      "category_name": "Networking",
+      "base_price": 1899,
+      "discount_price": 1699,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-015/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Length", "attribute_value": "100m" },
+        { "attribute_name": "Type", "attribute_value": "CAT6 UTP" }
+      ]
+    },
+    {
+      "name": "RJ45 Connector Pack (50 pcs)",
+      "description": "Durable RJ45 connectors for LAN terminations.",
+      "category_name": "Accessories",
+      "base_price": 499,
+      "discount_price": 399,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-016/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Quantity", "attribute_value": "50 pcs" },
+        { "attribute_name": "Compatibility", "attribute_value": "CAT5e/CAT6" }
+      ]
+    },
+    {
+      "name": "Power Strip with Surge Protection",
+      "description": "6-socket power strip with overload and surge protection.",
+      "category_name": "Accessories",
+      "base_price": 1299,
+      "discount_price": 1099,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-017/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Sockets", "attribute_value": "6" },
+        { "attribute_name": "Cord Length", "attribute_value": "2m" }
+      ]
+    },
+    {
+      "name": "Wall Mount TV Bracket",
+      "description": "Heavy-duty wall mount bracket for 32 to 55 inch TVs.",
+      "category_name": "Accessories",
+      "base_price": 1599,
+      "discount_price": 1399,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-018/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Supported Sizes", "attribute_value": "32-55 inch" },
+        { "attribute_name": "Tilt", "attribute_value": "Yes" }
+      ]
+    },
+    {
+      "name": "UPS 600VA",
+      "description": "Entry-level UPS for routers, PCs, and POS systems.",
+      "category_name": "Power Solutions",
+      "base_price": 3499,
+      "discount_price": 3099,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-019/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Capacity", "attribute_value": "600VA" },
+        { "attribute_name": "Backup Time", "attribute_value": "15-25 min" }
+      ]
+    },
+    {
+      "name": "UPS 1kVA",
+      "description": "High backup UPS with automatic voltage regulation.",
+      "category_name": "Power Solutions",
+      "base_price": 6199,
+      "discount_price": 5699,
+      "is_published": true,
+      "image_urls": [
+        "https://picsum.photos/seed/udaya-product-020/1200/800"
+      ],
+      "attributes": [
+        { "attribute_name": "Capacity", "attribute_value": "1kVA" },
+        { "attribute_name": "Output", "attribute_value": "230V AC" }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "name": "CCTV Installation (Up to 4 Cameras)",
+      "description": "Complete installation, alignment, and app setup for up to 4 cameras.",
+      "image_url": "https://picsum.photos/seed/udaya-service-001/1200/800",
+      "base_price": 3499,
+      "is_published": true
+    },
+    {
+      "name": "CCTV Maintenance Visit",
+      "description": "Inspection, cleaning, and health check for existing CCTV systems.",
+      "image_url": "https://picsum.photos/seed/udaya-service-002/1200/800",
+      "base_price": 1499,
+      "is_published": true
+    },
+    {
+      "name": "Inverter + Battery Installation",
+      "description": "Professional installation with wiring checks and load balancing.",
+      "image_url": "https://picsum.photos/seed/udaya-service-003/1200/800",
+      "base_price": 1999,
+      "is_published": true
+    },
+    {
+      "name": "Smart TV Wall Mount Setup",
+      "description": "Wall mount installation with cable management for smart TVs.",
+      "image_url": "https://picsum.photos/seed/udaya-service-004/1200/800",
+      "base_price": 1299,
+      "is_published": true
+    },
+    {
+      "name": "Home WiFi Optimization",
+      "description": "Signal survey and router placement tuning for better coverage.",
+      "image_url": "https://picsum.photos/seed/udaya-service-005/1200/800",
+      "base_price": 999,
+      "is_published": true
+    },
+    {
+      "name": "Network Cabling per Point",
+      "description": "LAN point installation with testing and labeling.",
+      "image_url": "https://picsum.photos/seed/udaya-service-006/1200/800",
+      "base_price": 699,
+      "is_published": true
+    },
+    {
+      "name": "Car Player Installation",
+      "description": "Dashboard fitting, wiring, and audio calibration for car players.",
+      "image_url": "https://picsum.photos/seed/udaya-service-007/1200/800",
+      "base_price": 1799,
+      "is_published": true
+    },
+    {
+      "name": "Annual Preventive Maintenance Plan",
+      "description": "Periodic service visits for inverter, CCTV, and networking systems.",
+      "image_url": "https://picsum.photos/seed/udaya-service-008/1200/800",
+      "base_price": 5999,
+      "is_published": true
+    }
+  ],
+  "combos": [
+    {
+      "name": "Home Security Starter Pack",
+      "description": "Basic CCTV setup for apartments and small homes.",
+      "price": 22999,
+      "is_published": true,
+      "banner_image": "https://picsum.photos/seed/udaya-combo-001/1200/800",
+      "items": [
+        { "item_type": "product", "name": "4 Camera CCTV Kit", "quantity": 1 },
+        { "item_type": "service", "name": "CCTV Installation (Up to 4 Cameras)", "quantity": 1 }
+      ]
+    },
+    {
+      "name": "Power Backup Essentials",
+      "description": "Reliable power backup bundle for homes.",
+      "price": 43999,
+      "is_published": true,
+      "banner_image": "https://picsum.photos/seed/udaya-combo-002/1200/800",
+      "items": [
+        { "item_type": "product", "name": "3kVA Home Inverter", "quantity": 1 },
+        { "item_type": "product", "name": "220Ah Tall Tubular Battery", "quantity": 1 },
+        { "item_type": "service", "name": "Inverter + Battery Installation", "quantity": 1 }
+      ]
+    },
+    {
+      "name": "Smart Living Bundle",
+      "description": "Upgrade your living room with smart entertainment gear.",
+      "price": 34499,
+      "is_published": true,
+      "banner_image": "https://picsum.photos/seed/udaya-combo-003/1200/800",
+      "items": [
+        { "item_type": "product", "name": "43 inch 4K Smart LED TV", "quantity": 1 },
+        { "item_type": "product", "name": "Wall Mount TV Bracket", "quantity": 1 },
+        { "item_type": "service", "name": "Smart TV Wall Mount Setup", "quantity": 1 }
+      ]
+    },
+    {
+      "name": "Office Network Quick Setup",
+      "description": "Starter networking hardware and setup assistance.",
+      "price": 7999,
+      "is_published": true,
+      "banner_image": "https://picsum.photos/seed/udaya-combo-004/1200/800",
+      "items": [
+        { "item_type": "product", "name": "Dual Band WiFi Router", "quantity": 1 },
+        { "item_type": "product", "name": "8 Port Gigabit Switch", "quantity": 1 },
+        { "item_type": "product", "name": "CAT6 Cable 100m Box", "quantity": 1 },
+        { "item_type": "service", "name": "Home WiFi Optimization", "quantity": 1 }
+      ]
+    },
+    {
+      "name": "Car Entertainment Pack",
+      "description": "Android player package with installation.",
+      "price": 13499,
+      "is_published": true,
+      "banner_image": "https://picsum.photos/seed/udaya-combo-005/1200/800",
+      "items": [
+        { "item_type": "product", "name": "10 inch Android Car Player", "quantity": 1 },
+        { "item_type": "service", "name": "Car Player Installation", "quantity": 1 }
+      ]
+    },
+    {
+      "name": "Security Pro + Maintenance",
+      "description": "Pro-grade CCTV setup with maintenance support.",
+      "price": 39999,
+      "is_published": true,
+      "banner_image": "https://picsum.photos/seed/udaya-combo-006/1200/800",
+      "items": [
+        { "item_type": "product", "name": "8 Camera CCTV Pro Kit", "quantity": 1 },
+        { "item_type": "service", "name": "CCTV Installation (Up to 4 Cameras)", "quantity": 1 },
+        { "item_type": "service", "name": "CCTV Maintenance Visit", "quantity": 1 }
+      ]
+    }
+  ],
+  "banners": [
+    {
+      "title": "Complete Home Security Starting at Great Prices",
+      "image_url": "https://picsum.photos/seed/udaya-banner-001/1600/600",
+      "priority": 100,
+      "is_active": true
+    },
+    {
+      "title": "Upgrade to Smart Living with TV + Setup Bundles",
+      "image_url": "https://picsum.photos/seed/udaya-banner-002/1600/600",
+      "priority": 90,
+      "is_active": true
+    },
+    {
+      "title": "Power Backup Solutions for Every Home",
+      "image_url": "https://picsum.photos/seed/udaya-banner-003/1600/600",
+      "priority": 80,
+      "is_active": true
+    },
+    {
+      "title": "Business Networking Products and Installation",
+      "image_url": "https://picsum.photos/seed/udaya-banner-004/1600/600",
+      "priority": 70,
+      "is_active": true
+    },
+    {
+      "title": "Annual Maintenance Plans Now Available",
+      "image_url": "https://picsum.photos/seed/udaya-banner-005/1600/600",
+      "priority": 60,
+      "is_active": true
+    }
+  ]
+}
