@@ -1,91 +1,93 @@
-==> Cloning from https://github.com/mainbranchdevs/udaytech-backend
-==> Checking out commit 027728dfcc5330d1785cfccfbf70052e6d8e4b44 in branch main
-==> Installing Python version 3.14.3...
-==> Using Python version 3.14.3 (default)
-==> Docs on specifying a Python version: https://render.com/docs/python-version
-==> Using Poetry version 2.1.3 (default)
-==> Docs on specifying a Poetry version: https://render.com/docs/poetry-version
-==> Running build command 'pip install -r requirements.txt'...
-Collecting fastapi==0.115.6 (from -r requirements.txt (line 1))
-  Downloading fastapi-0.115.6-py3-none-any.whl.metadata (27 kB)
-Collecting uvicorn==0.34.0 (from uvicorn[standard]==0.34.0->-r requirements.txt (line 2))
-  Downloading uvicorn-0.34.0-py3-none-any.whl.metadata (6.5 kB)
-Collecting sqlalchemy==2.0.36 (from sqlalchemy[asyncio]==2.0.36->-r requirements.txt (line 3))
-  Downloading SQLAlchemy-2.0.36-py3-none-any.whl.metadata (9.7 kB)
-Collecting asyncpg==0.30.0 (from -r requirements.txt (line 4))
-  Downloading asyncpg-0.30.0.tar.gz (957 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 957.7/957.7 kB 39.1 MB/s  0:00:00
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-  Preparing metadata (pyproject.toml): started
-  Preparing metadata (pyproject.toml): finished with status 'done'
-Collecting alembic==1.14.1 (from -r requirements.txt (line 5))
-  Downloading alembic-1.14.1-py3-none-any.whl.metadata (7.4 kB)
-Collecting pydantic==2.10.4 (from pydantic[email]==2.10.4->-r requirements.txt (line 6))
-  Downloading pydantic-2.10.4-py3-none-any.whl.metadata (29 kB)
-Collecting pydantic-settings==2.7.1 (from -r requirements.txt (line 7))
-  Downloading pydantic_settings-2.7.1-py3-none-any.whl.metadata (3.5 kB)
-Collecting python-jose==3.3.0 (from python-jose[cryptography]==3.3.0->-r requirements.txt (line 8))
-  Downloading python_jose-3.3.0-py2.py3-none-any.whl.metadata (5.4 kB)
-Collecting bcrypt<6,>=4.0 (from -r requirements.txt (line 9))
-  Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (10 kB)
-Collecting httpx==0.28.1 (from -r requirements.txt (line 10))
-  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
-Collecting cloudinary==1.41.0 (from -r requirements.txt (line 11))
-  Downloading cloudinary-1.41.0.tar.gz (177 kB)
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-  Preparing metadata (pyproject.toml): started
-  Preparing metadata (pyproject.toml): finished with status 'done'
-Collecting python-multipart==0.0.20 (from -r requirements.txt (line 12))
-  Downloading python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
-Collecting starlette<0.42.0,>=0.40.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
-  Downloading starlette-0.41.3-py3-none-any.whl.metadata (6.0 kB)
-Collecting typing-extensions>=4.8.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
-  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
-Collecting annotated-types>=0.6.0 (from pydantic==2.10.4->pydantic[email]==2.10.4->-r requirements.txt (line 6))
-  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
-Collecting pydantic-core==2.27.2 (from pydantic==2.10.4->pydantic[email]==2.10.4->-r requirements.txt (line 6))
-  Downloading pydantic_core-2.27.2.tar.gz (413 kB)
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-  Preparing metadata (pyproject.toml): started
-  Preparing metadata (pyproject.toml): finished with status 'error'
-  error: subprocess-exited-with-error
-  
-  × Preparing metadata (pyproject.toml) did not run successfully.
-  │ exit code: 1
-  ╰─> [14 lines of output]
-          Updating crates.io index
-      warning: failed to write cache, path: /usr/local/cargo/registry/index/index.crates.io-1949cf8c6b5b557f/.cache/ah/as/ahash, error: Read-only file system (os error 30)
-       Downloading crates ...
-        Downloaded displaydoc v0.2.5
-      error: failed to create directory `/usr/local/cargo/registry/cache/index.crates.io-1949cf8c6b5b557f`
-      
-      Caused by:
-        Read-only file system (os error 30)
-      💥 maturin failed
-        Caused by: Cargo metadata failed. Does your crate compile with `cargo build`?
-        Caused by: `cargo metadata` exited with an error:
-      Error running maturin: Command '['maturin', 'pep517', 'write-dist-info', '--metadata-directory', '/tmp/pip-modern-metadata-y1z9g9f3', '--interpreter', '/opt/render/project/src/.venv/bin/python3.14']' returned non-zero exit status 1.
-      Checking for Rust toolchain....
-      Running `maturin pep517 write-dist-info --metadata-directory /tmp/pip-modern-metadata-y1z9g9f3 --interpreter /opt/render/project/src/.venv/bin/python3.14`
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-[notice] A new release of pip is available: 25.3 -> 26.0.1
-[notice] To update, run: pip install --upgrade pip
-error: metadata-generation-failed
-× Encountered error while generating package metadata.
-╰─> pydantic-core
-note: This is an issue with the package mentioned above, not pip.
-hint: See above for details.
-==> Build failed 😞
-==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
-Need better ways to work with l
+2026-02-27T04:02:05.675316299Z ==> Cloning from https://github.com/mainbranchdevs/udaytech-backend
+2026-02-27T04:02:06.753252325Z ==> Checking out commit 6a068367ad6a437c5b73682a3e8eaedd5a301b2b in branch main
+2026-02-27T04:03:07.53166119Z ==> Installing Python version 3.14.3...
+2026-02-27T04:03:19.887319475Z ==> Using Python version 3.14.3 (default)
+2026-02-27T04:03:19.911626995Z ==> Docs on specifying a Python version: https://render.com/docs/python-version
+2026-02-27T04:03:29.185549773Z ==> Using Poetry version 2.1.3 (default)
+2026-02-27T04:03:29.235655084Z ==> Docs on specifying a Poetry version: https://render.com/docs/poetry-version
+2026-02-27T04:03:29.313535735Z ==> Running build command 'pip install -r requirements.txt'...
+2026-02-27T04:03:30.579111904Z Collecting fastapi==0.115.6 (from -r requirements.txt (line 1))
+2026-02-27T04:03:30.634309725Z   Downloading fastapi-0.115.6-py3-none-any.whl.metadata (27 kB)
+2026-02-27T04:03:31.475595017Z Collecting uvicorn==0.34.0 (from uvicorn[standard]==0.34.0->-r requirements.txt (line 2))
+2026-02-27T04:03:31.480066438Z   Downloading uvicorn-0.34.0-py3-none-any.whl.metadata (6.5 kB)
+2026-02-27T04:03:32.270249469Z Collecting sqlalchemy==2.0.36 (from sqlalchemy[asyncio]==2.0.36->-r requirements.txt (line 3))
+2026-02-27T04:03:32.275118359Z   Downloading SQLAlchemy-2.0.36-py3-none-any.whl.metadata (9.7 kB)
+2026-02-27T04:03:32.901352929Z Collecting asyncpg==0.30.0 (from -r requirements.txt (line 4))
+2026-02-27T04:03:32.927270109Z   Downloading asyncpg-0.30.0.tar.gz (957 kB)
+2026-02-27T04:03:33.267379914Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 957.7/957.7 kB 2.1 MB/s  0:00:00
+2026-02-27T04:03:33.335603245Z   Installing build dependencies: started
+2026-02-27T04:03:38.734114235Z   Installing build dependencies: finished with status 'done'
+2026-02-27T04:03:38.734737195Z   Getting requirements to build wheel: started
+2026-02-27T04:03:39.619729689Z   Getting requirements to build wheel: finished with status 'done'
+2026-02-27T04:03:39.620700019Z   Preparing metadata (pyproject.toml): started
+2026-02-27T04:03:39.970634944Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2026-02-27T04:03:40.312032679Z Collecting alembic==1.14.1 (from -r requirements.txt (line 5))
+2026-02-27T04:03:40.317014729Z   Downloading alembic-1.14.1-py3-none-any.whl.metadata (7.4 kB)
+2026-02-27T04:03:40.990874189Z Collecting pydantic==2.10.4 (from pydantic[email]==2.10.4->-r requirements.txt (line 6))
+2026-02-27T04:03:41.05052976Z   Downloading pydantic-2.10.4-py3-none-any.whl.metadata (29 kB)
+2026-02-27T04:03:41.456338926Z Collecting pydantic-settings==2.7.1 (from -r requirements.txt (line 7))
+2026-02-27T04:03:41.460702376Z   Downloading pydantic_settings-2.7.1-py3-none-any.whl.metadata (3.5 kB)
+2026-02-27T04:03:41.922292783Z Collecting python-jose==3.3.0 (from python-jose[cryptography]==3.3.0->-r requirements.txt (line 8))
+2026-02-27T04:03:41.927210363Z   Downloading python_jose-3.3.0-py2.py3-none-any.whl.metadata (5.4 kB)
+2026-02-27T04:03:42.471405261Z Collecting bcrypt<6,>=4.0 (from -r requirements.txt (line 9))
+2026-02-27T04:03:42.474858881Z   Downloading bcrypt-5.0.0-cp39-abi3-manylinux_2_34_x86_64.whl.metadata (10 kB)
+2026-02-27T04:03:42.882226197Z Collecting httpx==0.28.1 (from -r requirements.txt (line 10))
+2026-02-27T04:03:42.886007677Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2026-02-27T04:03:43.367517655Z Collecting cloudinary==1.41.0 (from -r requirements.txt (line 11))
+2026-02-27T04:03:43.372672705Z   Downloading cloudinary-1.41.0.tar.gz (177 kB)
+2026-02-27T04:03:43.656770789Z   Installing build dependencies: started
+2026-02-27T04:03:45.08016287Z   Installing build dependencies: finished with status 'done'
+2026-02-27T04:03:45.08082354Z   Getting requirements to build wheel: started
+2026-02-27T04:03:45.698529679Z   Getting requirements to build wheel: finished with status 'done'
+2026-02-27T04:03:45.699525829Z   Preparing metadata (pyproject.toml): started
+2026-02-27T04:03:45.997054584Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2026-02-27T04:03:46.38405486Z Collecting python-multipart==0.0.20 (from -r requirements.txt (line 12))
+2026-02-27T04:03:46.38882401Z   Downloading python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
+2026-02-27T04:03:47.134960781Z Collecting starlette<0.42.0,>=0.40.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
+2026-02-27T04:03:47.139663291Z   Downloading starlette-0.41.3-py3-none-any.whl.metadata (6.0 kB)
+2026-02-27T04:03:47.74667243Z Collecting typing-extensions>=4.8.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
+2026-02-27T04:03:47.7500846Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2026-02-27T04:03:48.293215258Z Collecting annotated-types>=0.6.0 (from pydantic==2.10.4->pydantic[email]==2.10.4->-r requirements.txt (line 6))
+2026-02-27T04:03:48.296867878Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2026-02-27T04:03:49.478752406Z Collecting pydantic-core==2.27.2 (from pydantic==2.10.4->pydantic[email]==2.10.4->-r requirements.txt (line 6))
+2026-02-27T04:03:49.488246846Z   Downloading pydantic_core-2.27.2.tar.gz (413 kB)
+2026-02-27T04:03:49.77889192Z   Installing build dependencies: started
+2026-02-27T04:03:52.320194688Z   Installing build dependencies: finished with status 'done'
+2026-02-27T04:03:52.320926848Z   Getting requirements to build wheel: started
+2026-02-27T04:03:52.388882849Z   Getting requirements to build wheel: finished with status 'done'
+2026-02-27T04:03:52.389800889Z   Preparing metadata (pyproject.toml): started
+2026-02-27T04:03:55.81746566Z   Preparing metadata (pyproject.toml): finished with status 'error'
+2026-02-27T04:03:55.82129628Z   error: subprocess-exited-with-error
+2026-02-27T04:03:55.82130493Z   
+2026-02-27T04:03:55.82130869Z   × Preparing metadata (pyproject.toml) did not run successfully.
+2026-02-27T04:03:55.82131171Z   │ exit code: 1
+2026-02-27T04:03:55.82131628Z   ╰─> [14 lines of output]
+2026-02-27T04:03:55.8213189Z           Updating crates.io index
+2026-02-27T04:03:55.82132279Z       warning: failed to write cache, path: /usr/local/cargo/registry/index/index.crates.io-1949cf8c6b5b557f/.cache/ah/as/ahash, error: Read-only file system (os error 30)
+2026-02-27T04:03:55.82132535Z        Downloading crates ...
+2026-02-27T04:03:55.82132787Z         Downloaded ahash v0.8.11
+2026-02-27T04:03:55.82133101Z       error: failed to create directory `/usr/local/cargo/registry/cache/index.crates.io-1949cf8c6b5b557f`
+2026-02-27T04:03:55.82133361Z       
+2026-02-27T04:03:55.82134545Z       Caused by:
+2026-02-27T04:03:55.82134815Z         Read-only file system (os error 30)
+2026-02-27T04:03:55.82135065Z       💥 maturin failed
+2026-02-27T04:03:55.82135452Z         Caused by: Cargo metadata failed. Does your crate compile with `cargo build`?
+2026-02-27T04:03:55.82135761Z         Caused by: `cargo metadata` exited with an error:
+2026-02-27T04:03:55.82136156Z       Error running maturin: Command '['maturin', 'pep517', 'write-dist-info', '--metadata-directory', '/tmp/pip-modern-metadata-txeyd3nr', '--interpreter', '/opt/render/project/src/.venv/bin/python3.14']' returned non-zero exit status 1.
+2026-02-27T04:03:55.82136403Z       Checking for Rust toolchain....
+2026-02-27T04:03:55.82136795Z       Running `maturin pep517 write-dist-info --metadata-directory /tmp/pip-modern-metadata-txeyd3nr --interpreter /opt/render/project/src/.venv/bin/python3.14`
+2026-02-27T04:03:55.82137049Z       [end of output]
+2026-02-27T04:03:55.8213731Z   
+2026-02-27T04:03:55.82137579Z   note: This error originates from a subprocess, and is likely not a problem with pip.
+2026-02-27T04:03:56.221121366Z 
+2026-02-27T04:03:56.221160756Z [notice] A new release of pip is available: 25.3 -> 26.0.1
+2026-02-27T04:03:56.221166486Z [notice] To update, run: pip install --upgrade pip
+2026-02-27T04:03:56.223133036Z error: metadata-generation-failed
+2026-02-27T04:03:56.223161986Z 
+2026-02-27T04:03:56.223168106Z × Encountered error while generating package metadata.
+2026-02-27T04:03:56.223173126Z ╰─> pydantic-core
+2026-02-27T04:03:56.223176096Z 
+2026-02-27T04:03:56.223180466Z note: This is an issue with the package mentioned above, not pip.
+2026-02-27T04:03:56.223184726Z hint: See above for details.
+2026-02-27T04:03:56.601515702Z ==> Build failed 😞
+2026-02-27T04:03:56.601531562Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
