@@ -28,8 +28,11 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         settings.FRONTEND_URL,
+        settings.FRONTEND_URL.rstrip("/"),
         "http://localhost:5173",
         "http://localhost:5174",
+        "https://udayatech.in",
+        "https://www.udayatech.in",
     ],
     allow_credentials=True,
     allow_methods=["*"],
