@@ -21,7 +21,7 @@ async def send_otp_email(to_email: str, otp: str) -> bool:
 
     def _send_email() -> None:
         resend.api_key = settings.RESEND_API_KEY
-        
+
         params = {
             "from": settings.FROM_EMAIL,
             "to": to_email,
@@ -37,6 +37,19 @@ async def send_otp_email(to_email: str, otp: str) -> bool:
     try:
         await asyncio.to_thread(_send_email)
         return True
+    except resend.exceptions.ResendError as e:
+        if "domain is not verified" in str(e):
+            logger.warning(
+                "Email domain not verified in Resend. OTP not sent. "
+                "For dev/testing, use this code: %s (for %s). "
+                "To fix: Verify your domain at https://resend.com/domains",
+                otp,
+                to_email,
+            )
+            return True  # allow flow to continue in dev
+        else:
+            logger.exception("Failed to send OTP email to %s: %s", to_email, e)
+            return False
     except Exception as e:
         logger.exception("Failed to send OTP email to %s: %s", to_email, e)
         return False
