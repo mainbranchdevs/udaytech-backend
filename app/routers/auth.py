@@ -10,7 +10,7 @@ from app.dependencies.auth import get_current_user
 from app.models.user import OTP, User
 from app.schemas.auth import OTPRequest, OTPVerify
 from app.schemas.user import UserOut
-from app.services.email_service import send_otp_email
+from app.services.email_service import send_otp_email, test_resend_connection
 from app.utils.jwt import create_access_token
 from app.utils.otp import generate_otp, hash_otp, verify_otp
 
@@ -87,3 +87,9 @@ async def get_me(user: User = Depends(get_current_user)):
         created_at=user.created_at,
         profile_image=user.profile.profile_image if user.profile else None,
     )
+
+
+@router.get("/test-email-service")
+async def test_email_service():
+    """Test email service connection and domain verification status."""
+    return await test_resend_connection()
