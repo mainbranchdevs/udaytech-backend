@@ -57,6 +57,8 @@ async def send_otp_email(to_email: str, otp: str) -> bool:
                    settings.RESEND_API_KEY[:10] + "..." if settings.RESEND_API_KEY else "None",
                    settings.FROM_EMAIL)
 
+        params = {
+            "from": settings.FROM_EMAIL,
             "to": to_email,
             "subject": "Your Udaya Tech verification code",
             "html": (
